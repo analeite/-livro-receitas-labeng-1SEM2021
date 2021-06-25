@@ -1,0 +1,30 @@
+create database livrodereceitas;
+
+use livrodereceitas;
+
+create table ingrediente(
+	id_ingrediente int not null auto_increment primary key,
+    nome_ingrediente varchar(100) not null
+);
+
+create table receita(
+	id_receita int not null auto_increment primary key,
+    nome_receita varchar(100) not null,
+	descricao varchar(200),
+	modo_preparo varchar(1000) not null
+);
+
+create table receitacompleta(
+	id_receitacompleta int not null auto_increment primary key,
+	idrec int not null,
+	constraint fk_receita foreign key (idrec) references receita(id_receita)
+);
+
+create table receitacompleta_ingrediente (
+	id_receitacompleta int not null auto_increment primary key,
+	id_receita_completa int, 
+	id_ingrediente int,
+    quantidade varchar(100) not null,
+	constraint fk_receita_completa_r foreign key (id_receita_completa) references receitacompleta(id_receitacompleta),
+	constraint fk_receita_completa_ingrediente foreign key (id_ingrediente) references ingrediente(id_ingrediente)
+);

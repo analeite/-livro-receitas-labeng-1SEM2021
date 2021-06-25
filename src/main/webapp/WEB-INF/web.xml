@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  version="3.1"
+  metadata-complete="true">
+
+    <description> ReceitasProject </description>    
+    <display-name>Livro de Receitas Shalom</display-name>
+    
+    <servlet>
+        <servlet-name>HomePage</servlet-name>
+        <servlet-class>main.java.controller.HomePage</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>HomePage</servlet-name>
+        <url-pattern>/home.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+   		<servlet-name>default</servlet-name>
+   		<url-pattern>*.js</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+   		<servlet-name>default</servlet-name>
+   		<url-pattern>*.css</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+        <servlet-name>InserirIngrediente</servlet-name>
+        <servlet-class>main.java.controller.InserirIngrediente</servlet-class>
+    </servlet>
+    
+        
+    <servlet-mapping>
+        <servlet-name>InserirIngrediente</servlet-name>
+        <url-pattern>/inseriringrediente.action</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>NovoIngrediente</servlet-name>
+        <servlet-class>main.java.controller.NovoIngrediente</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>NovoIngrediente</servlet-name>
+        <url-pattern>/novoingrediente.action</url-pattern>
+    </servlet-mapping>
+    
+   	<servlet>
+        <servlet-name>InserirMedida</servlet-name>
+        <servlet-class>main.java.controller.InserirMedida</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>InserirMedida</servlet-name>
+        <url-pattern>/inserirmedida.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>InserirReceita</servlet-name>
+        <servlet-class>main.java.controller.InserirReceita</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>InserirReceita</servlet-name>
+        <url-pattern>/inserirreceita.action</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>NovaReceita</servlet-name>
+        <servlet-class>main.java.controller.NovaReceita</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>NovaReceita</servlet-name>
+        <url-pattern>/novareceita.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>NovaReceitaCompleta</servlet-name>
+        <servlet-class>main.java.controller.NovaReceitaCompleta</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>NovaReceitaCompleta</servlet-name>
+        <url-pattern>/novareceitacompleta.action</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>NovaMedida</servlet-name>
+        <servlet-class>main.java.controller.NovaMedida</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>NovaMedida</servlet-name>
+        <url-pattern>/novamedida.action</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>ConfirmarExclusaoMedida</servlet-name>
+        <servlet-class>main.java.controller.ConfirmarExclusaoMedida</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ConfirmarExclusaoMedida</servlet-name>
+        <url-pattern>/confirmarexclusaomedida.action</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>ConfirmarExclusaoIngrediente</servlet-name>
+        <servlet-class>main.java.controller.ConfirmarExclusaoIngrediente</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ConfirmarExclusaoIngrediente</servlet-name>
+        <url-pattern>/confirmarexclusaoingrediente.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ConfirmarExclusaoReceita</servlet-name>
+        <servlet-class>main.java.controller.ConfirmarExclusaoReceita</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ConfirmarExclusaoReceita</servlet-name>
+        <url-pattern>/confirmarexclusaoreceita.action</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>ConsultaIngredientes</servlet-name>
+        <servlet-class>main.java.controller.ConsultaIngredientes</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ConsultaIngredientes</servlet-name>
+        <url-pattern>/consultaingredientes.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ConsultaMedidas</servlet-name>
+        <servlet-class>main.java.controller.ConsultaMedidas</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ConsultaMedidas</servlet-name>
+        <url-pattern>/consultamedidas.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ConsultaReceitas</servlet-name>
+        <servlet-class>main.java.controller.ConsultaReceitas</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ConsultaReceitas</servlet-name>
+        <url-pattern>/consultareceitas.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ConsultaNomeIngrediente</servlet-name>
+        <servlet-class>main.java.controller.ConsultaNomeIngrediente</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ConsultaNomeIngrediente</servlet-name>
+        <url-pattern>/consultanomeingrediente.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ConsultaNomeMedida</servlet-name>
+        <servlet-class>main.java.controller.ConsultaNomeMedida</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ConsultaNomeMedida</servlet-name>
+        <url-pattern>/consultanomemedida.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ConsultaNomeReceita</servlet-name>
+        <servlet-class>main.java.controller.ConsultaNomeReceita</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ConsultaNomeReceita</servlet-name>
+        <url-pattern>/consultanomereceita.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ConsultaNomeReceitaCompleta</servlet-name>
+        <servlet-class>main.java.controller.ConsultaNomeReceitaCompleta</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ConsultaNomeReceitaCompleta</servlet-name>
+        <url-pattern>/consultanomereceitacompleta.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GerenciarReceitas</servlet-name>
+        <servlet-class>main.java.controller.GerenciarReceitas</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>GerenciarReceitas</servlet-name>
+        <url-pattern>/gerenciarreceitas.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GerenciarMedidas</servlet-name>
+        <servlet-class>main.java.controller.GerenciarMedidas</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>GerenciarMedidas</servlet-name>
+        <url-pattern>/gerenciarmedidas.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>EditarIngrediente</servlet-name>
+        <servlet-class>main.java.controller.EditarIngrediente</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>EditarIngrediente</servlet-name>
+        <url-pattern>/editaringrediente.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>EditarReceitaCompleta</servlet-name>
+        <servlet-class>main.java.controller.EditarReceitaCompleta</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>EditarReceitaCompleta</servlet-name>
+        <url-pattern>/editarreceitacompleta.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>EditarMedida</servlet-name>
+        <servlet-class>main.java.controller.EditarMedida</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>EditarMedida</servlet-name>
+        <url-pattern>/editarmedida.action</url-pattern>
+    </servlet-mapping>
+    
+    <!--<servlet>
+        <servlet-name>ExcluirIngrediente</servlet-name>
+        <servlet-class>main.java.controller.ExcluirIngrediente</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ExcluirIngrediente</servlet-name>
+        <url-pattern>/excluiringrediente.action</url-pattern>
+    </servlet-mapping>
+    
+	<servlet>
+        <servlet-name>ExcluirReceita</servlet-name>
+        <servlet-class>main.java.controller.ExcluirReceita</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ExcluirReceita</servlet-name>
+        <url-pattern>/excluirreceita.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ExcluirMedida</servlet-name>
+        <servlet-class>main.java.controller.ExcluirMedida</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ExcluirMedida</servlet-name>
+        <url-pattern>/excluirmedida.action</url-pattern>
+    </servlet-mapping>-->
+    
+    <servlet>
+        <servlet-name>AlterarMedida</servlet-name>
+        <servlet-class>main.java.controller.AlterarMedida</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AlterarMedida</servlet-name>
+        <url-pattern>/alterarmedida.action</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>AlterarIngrediente</servlet-name>
+        <servlet-class>main.java.controller.AlterarIngrediente</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AlterarIngrediente</servlet-name>
+        <url-pattern>/alteraringrediente.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AlterarReceitaCompleta</servlet-name>
+        <servlet-class>main.java.controller.AlterarReceitaCompleta</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AlterarReceitaCompleta</servlet-name>
+        <url-pattern>/alterarreceitacompleta.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>NaoEncontrado</servlet-name>
+        <servlet-class>main.java.controller.NaoEncontrado</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>NaoEncontrado</servlet-name>
+        <url-pattern>/naoencontrado.action</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Resposta</servlet-name>
+        <servlet-class>main.java.controller.Resposta</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Resposta</servlet-name>
+        <url-pattern>/resposta.action</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
